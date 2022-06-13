@@ -18,5 +18,14 @@
         android:id="@+id/headsetListFragment"
         android:name="com.example.meubeatsstudy.presentation.productlist.ui.HeadsetListFragment"
         android:label="fragment_headset_list"
-        tools:layout="@layout/fragment_headset_list" />
+        tools:layout="@layout/fragment_headset_list" >
+        <action
+            android:id="@+id/action_headsetListFragment_to_productDesciptionFragment"
+            app:destination="@id/productDesciptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDesciptionFragment"
+        android:name="com.example.meubeatsstudy.ProductDesciptionFragment"
+        android:label="fragment_product_desciption"
+        tools:layout="@layout/fragment_product_desciption" />
 </navigation>

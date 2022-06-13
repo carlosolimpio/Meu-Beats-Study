@@ -56,7 +56,7 @@ class LoginFragment : Fragment() {
         loginViewModel.login.observe(viewLifecycleOwner) {
             when (it) {
                 is Success -> {
-                    Toast.makeText(binding.root.context, it.data.toString(), Toast.LENGTH_LONG)
+                    Toast.makeText(activity, it.data.toString(), Toast.LENGTH_LONG)
                     Navigation
                         .findNavController(binding.root)
                         .navigate(R.id.action_loginFragment_to_headsetListFragment)

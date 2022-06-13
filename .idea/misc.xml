@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout-v23/login_layout.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/card_product_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/card_product_layout_item.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_headset_list.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />

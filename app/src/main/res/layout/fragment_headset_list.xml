@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HeadsetListFragment">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -55,6 +54,8 @@
                 android:fontFamily="@font/dmsansbold"
                 android:text="@string/logout"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="#6200EE"
                 app:cornerRadius="50dp"
                 app:layout_constraintEnd_toEndOf="@+id/iv_default_headset"
                 app:layout_constraintStart_toStartOf="@+id/iv_default_headset"
@@ -68,6 +69,8 @@
                 android:fontFamily="@font/dmsansbold"
                 android:text="@string/question_mark"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="#6200EE"
                 app:cornerRadius="50dp"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_logout"
                 app:layout_constraintStart_toEndOf="@+id/btn_logout"
