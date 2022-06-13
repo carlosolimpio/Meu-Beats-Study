@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/elipse.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/elipser.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/login_cover_gradient.xml" value="0.3335" />
+        <entry key="app/src/main/res/drawable/product_image_gradient.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/rounded_square_shape.xml" value="0.2165" />
+        <entry key="app/src/main/res/layout-v23/login_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/card_product_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_headset_list.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/login_layout.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>

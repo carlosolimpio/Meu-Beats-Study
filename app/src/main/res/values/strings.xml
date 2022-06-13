@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Meu Beats Study</string>
+    <string name="meu_beats">Meu beats</string>
+    <string name="slogan">Especializados em fones para deejay</string>
+    <string name="inscrevase">Ainda não é cadastrado? Inscreva-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="usuario">Usuário</string>
+    <string name="nome_cadastrado">Nome cadastrado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="question_mark">\?</string>
 </resources>

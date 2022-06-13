@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeadsetListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_header"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:background="@drawable/product_image_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_default_headset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="39dp"
+                android:src="@drawable/default_headset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_elipse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/elipse"
+                android:alpha="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_default_headset"
+                app:layout_constraintEnd_toEndOf="@+id/iv_default_headset"
+                app:layout_constraintStart_toStartOf="@+id/iv_default_headset" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                android:layout_marginTop="23dp"
+                android:layout_width="163dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/dmsansbold"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_default_headset"
+                app:layout_constraintStart_toStartOf="@+id/iv_default_headset"
+                app:layout_constraintTop_toBottomOf="@+id/iv_elipse" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_about"
+                android:layout_marginStart="12dp"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/dmsansbold"
+                android:text="@string/question_mark"
+                android:textAllCaps="false"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_logout"
+                app:layout_constraintStart_toEndOf="@+id/btn_logout"
+                app:layout_constraintTop_toTopOf="@+id/btn_logout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_products"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
