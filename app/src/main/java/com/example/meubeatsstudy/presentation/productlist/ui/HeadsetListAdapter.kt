@@ -3,6 +3,7 @@ package com.example.meubeatsstudy.presentation.productlist.ui
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.meubeatsstudy.R
 import com.example.meubeatsstudy.data.productlist.model.Product
@@ -44,9 +45,12 @@ class HeadsetListAdapter : RecyclerView.Adapter<HeadsetListAdapter.HeadsetListVi
                 tvProductPrice.text = "R$ ".plus(product.price)
 
                 clProductLayout.setOnClickListener {
-                    Navigation
-                        .findNavController(binding.root)
-                        .navigate(R.id.action_headsetListFragment_to_productDesciptionFragment)
+                    val destination = HeadsetListFragmentDirections
+                        .actionHeadsetListFragmentToProductDesciptionFragment().apply {
+                            productId = product.id
+                        }
+
+                    clProductLayout.findNavController().navigate(destination)
                 }
             }
         }

@@ -25,7 +25,12 @@
     </fragment>
     <fragment
         android:id="@+id/productDesciptionFragment"
-        android:name="com.example.meubeatsstudy.ProductDesciptionFragment"
+        android:name="com.example.meubeatsstudy.presentation.productdescription.ui.ProductDescriptionFragment"
         android:label="fragment_product_desciption"
-        tools:layout="@layout/fragment_product_desciption" />
+        tools:layout="@layout/fragment_product_desciption" >
+        <argument
+            android:name="productId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>

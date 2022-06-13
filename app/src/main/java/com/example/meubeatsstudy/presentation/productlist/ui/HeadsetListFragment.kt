@@ -49,7 +49,7 @@ class HeadsetListFragment : Fragment() {
             }
 
             btnAbout.setOnClickListener {
-                Toast.makeText(activity, "Created by Carlos", Toast.LENGTH_LONG)
+                Toast.makeText(binding.root.context, "Created by Carlos", Toast.LENGTH_LONG)
             }
         }
     }
