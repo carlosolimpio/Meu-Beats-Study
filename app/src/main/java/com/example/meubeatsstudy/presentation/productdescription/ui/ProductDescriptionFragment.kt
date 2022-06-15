@@ -53,7 +53,7 @@ class ProductDescriptionFragment : Fragment() {
 
     private fun initViews(product: Product) {
         binding.apply {
-            textView2.text = product.description.captionType
+            //textView2.text = product.description.captionType
         }
     }
 }

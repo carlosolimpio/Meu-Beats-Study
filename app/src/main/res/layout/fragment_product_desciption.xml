@@ -5,18 +5,248 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="377dp"
+            android:background="@drawable/product_image_gradient">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:srcCompat="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_product_image"
+                android:layout_width="310dp"
+                android:layout_height="255dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/default_headset" />
+
+            <ImageView
+                android:id="@+id/iv_elipse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ellipse"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_product_image"
+                app:layout_constraintEnd_toEndOf="@+id/iv_product_image"
+                app:layout_constraintStart_toStartOf="@+id/iv_product_image" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansbold"
+                android:text="@string/modelo_1"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_connection"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginStart="55dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/connection"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/tv_connection_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_connection"
+                app:layout_constraintStart_toEndOf="@+id/tv_connection"
+                app:layout_constraintTop_toTopOf="@+id/tv_connection"
+                tools:text="Bluetooth" />
+
+            <TextView
+                android:id="@+id/tv_compatibility"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/compatibility"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_connection"
+                app:layout_constraintStart_toStartOf="@+id/tv_connection"
+                app:layout_constraintTop_toBottomOf="@+id/tv_connection" />
+
+            <TextView
+                android:id="@+id/tv_compatibility_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_connection_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_compatibility"
+                tools:text="Bluetooth 4.1" />
+
+            <TextView
+                android:id="@+id/tv_power"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/power"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_compatibility"
+                app:layout_constraintStart_toStartOf="@+id/tv_compatibility"
+                app:layout_constraintTop_toBottomOf="@+id/tv_compatibility" />
+
+            <TextView
+                android:id="@+id/tv_power_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_compatibility_value"
+                app:layout_constraintStart_toStartOf="@+id/tv_compatibility_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_power"
+                tools:text="Bateria" />
+
+            <TextView
+                android:id="@+id/tv_autonomy"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/autonomy"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_power"
+                app:layout_constraintStart_toStartOf="@+id/tv_power"
+                app:layout_constraintTop_toBottomOf="@+id/tv_power" />
+
+            <TextView
+                android:id="@+id/tv_autonomy_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_power_value"
+                app:layout_constraintStart_toStartOf="@+id/tv_power_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_autonomy"
+                tools:text="16 horas" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/height"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_autonomy"
+                app:layout_constraintStart_toStartOf="@+id/tv_autonomy"
+                app:layout_constraintTop_toBottomOf="@+id/tv_autonomy" />
+
+            <TextView
+                android:id="@+id/tv_height_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_autonomy_value"
+                app:layout_constraintStart_toStartOf="@+id/tv_autonomy_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_height"
+                tools:text="18,4 cm" />
+
+            <TextView
+                android:id="@+id/tv_caption"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/dmsansbold"
+                android:gravity="right"
+                android:text="@string/caption"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_height"
+                app:layout_constraintStart_toStartOf="@+id/tv_height"
+                app:layout_constraintTop_toBottomOf="@+id/tv_height" />
+
+            <TextView
+                android:id="@+id/tv_caption_value"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dmsansregular"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_height_value"
+                app:layout_constraintStart_toStartOf="@+id/tv_height_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_caption"
+                tools:text="Semi ativa" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy"
+                android:layout_width="327dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="#6200EE"
+                android:fontFamily="@font/dmsansbold"
+                android:text="@string/buy"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </FrameLayout>

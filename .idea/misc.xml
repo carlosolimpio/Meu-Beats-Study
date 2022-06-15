@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1239488731920619" />
         <entry key="app/src/main/res/drawable/elipse.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/elipser.xml" value="0.2165" />
+        <entry key="app/src/main/res/drawable/ellipse.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.2165" />
         <entry key="app/src/main/res/drawable/login_cover_gradient.xml" value="0.3335" />
         <entry key="app/src/main/res/drawable/product_image_gradient.xml" value="0.2165" />
@@ -16,7 +18,7 @@
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_headset_list.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_product_desciption.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/fragment_product_desciption.xml" value="0.25" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.33" />
       </map>
     </option>

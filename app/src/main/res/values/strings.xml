@@ -7,8 +7,16 @@
     <string name="senha">Senha</string>
     <string name="usuario">Usuário</string>
     <string name="nome_cadastrado">Nome cadastrado</string>
+    <string name="modelo_1">Modelo 01</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logout">Logout</string>
     <string name="question_mark">\?</string>
+    <string name="connection">Conexão</string>
+    <string name="compatibility">Compatibilidade</string>
+    <string name="power">Alimentação</string>
+    <string name="autonomy">Autonomia</string>
+    <string name="height">Altura</string>
+    <string name="caption">Captação</string>
+    <string name="buy">Comprar</string>
 </resources>

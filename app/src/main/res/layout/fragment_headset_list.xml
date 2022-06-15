@@ -18,10 +18,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageButton
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="24dp"
                 android:src="@drawable/ic_search"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +40,7 @@
                 android:id="@+id/iv_elipse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/elipse"
-                android:alpha="0.5"
+                android:src="@drawable/ellipse"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_default_headset"
                 app:layout_constraintEnd_toEndOf="@+id/iv_default_headset"
                 app:layout_constraintStart_toStartOf="@+id/iv_default_headset" />
@@ -50,7 +49,7 @@
                 android:id="@+id/btn_logout"
                 android:layout_marginTop="23dp"
                 android:layout_width="163dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:fontFamily="@font/dmsansbold"
                 android:text="@string/logout"
                 android:textAllCaps="false"
@@ -65,7 +64,7 @@
                 android:id="@+id/btn_about"
                 android:layout_marginStart="12dp"
                 android:layout_width="45dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:fontFamily="@font/dmsansbold"
                 android:text="@string/question_mark"
                 android:textAllCaps="false"

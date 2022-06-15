@@ -95,7 +95,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_entrar"
             android:layout_width="326dp"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_marginBottom="24dp"
             android:fontFamily="@font/dmsansbold"
             android:textAllCaps="false"
